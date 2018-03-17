@@ -8,7 +8,7 @@ def avgofdigits(digitlist):
 
 def valofdigits(digitlist):
     val = 0
-    for i in range(len(digitlist)):
+    for i in xrange(len(digitlist)):
         val += digitlist[i] * 10**(-i)
     return val
 
@@ -20,11 +20,11 @@ def inttodigitlist(i):
     return digitlist
 
 def main():
-    for md in range(1, 8):
+    for md in xrange(1, 8):
         MAX_DIGITS = md
         print 'looking for numbers in range (', 10**(MAX_DIGITS-1), ',', 10**MAX_DIGITS, ')'
         formatstr = '.' + str(MAX_DIGITS-1) + 'f'
-        for i in range(10**(MAX_DIGITS-1), 10**MAX_DIGITS):
+        for i in xrange(10**(MAX_DIGITS-1), 10**MAX_DIGITS):
             if i % 10 == 0:
                 continue
             digitlist = inttodigitlist(i)
