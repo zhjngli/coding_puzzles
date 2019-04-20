@@ -4,7 +4,7 @@
 # each row of the grid has exactly one segment of white pixels, and
 # the white segments of any two consecutive rows overlap in at least one column. 
  
-# This diagram (see 'Percolation Problem.png') shows two of the 215401 percolation patterns that may be embedded in a 5x5 grid, as well as an invalid pattern. The bottom pattern is not a valid percolation pattern for either of two reasons:
+# This diagram (see 'percolation_example.png') shows two of the 215401 percolation patterns that may be embedded in a 5x5 grid, as well as an invalid pattern. The bottom pattern is not a valid percolation pattern for either of two reasons:
 # the white segments in rows 1 and 2 don’t share a column
 # the bottom row contains more than one white segment.
  
